@@ -1,0 +1,74 @@
+:root{
+    --rgb-color-1: linear-gradient(45deg,rgb(233, 152, 30),rgb(225, 115, 235));
+    --rgb-color-2: linear-gradient(45deg,rgb(225, 115, 235),rgb(233, 152, 30));
+
+}
+
+.Background{
+    background-image: repeating-linear-gradient(60deg,rgba(255, 0, 0, 0.664), rgba(255, 255, 0, 0.575));
+    height: 100%;
+    width: auto;
+}
+.MainBar{
+    margin: 4%;
+    border-radius: 9px;
+    padding-right: 5%;
+    padding-left: 5%;
+    
+
+    background-color: wheat;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 2em;
+}
+.Border{
+    border-radius: 9px;
+    box-shadow: 5px;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 13%;
+    margin-right: 13%;
+    background-color: rgba(0, 0, 0, 0.192);
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap: 1.5em;
+}
+/*
+.Border:hover{
+    background-color: rgb(24, 24, 24);
+    color: wheat;
+    border-image: var(--rgb-color-1) 1;
+}*/
+.buttons{
+    border-style: solid;
+    border-color:aliceblue;
+    border-radius: 8px;
+    
+    align-items: center;
+    text-wrap: balance;
+    width: auto;
+    height: 40px;
+    opacity: 0.8;
+    cursor: pointer;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    font-size: 26px;
+    font-family: Georgia;
+    color: black;
+    background-image: var(--rgb-color-1);
+}
+.buttons:hover{
+    color: rgb(247, 247, 247);
+    background-image: var(--rgb-color-2);
+    border-color: rgb(252, 211, 161);
+}
